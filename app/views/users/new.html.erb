@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div id='main_wrapper'>
+      <ul>
+        <form method='post' action='/users/create'>
+          <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        <li>First Name</li>
+        <li><input type='text' name='info[first_name]'></li>
+        <li>Last Name</li>
+        <li><input type='text' name='info[last_name]'></li>
+        <li>Email</li>
+        <li><input type='text' name='info[email]'></li>
+        <li>Password</li>
+        <li><input type='password' name='info[password]'></li>
+        <li><input type='submit' value='Create' /></li>
+      </ul>
+    </div>
+</body>
+
+
+</html>
