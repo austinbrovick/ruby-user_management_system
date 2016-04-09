@@ -1,0 +1,8 @@
+rails new userManagementSystem1
+cd userManagementSystem1/
+rails g controller Users index
+rails g model User first_name last_name email password
+rake db:migrate
+rails c
+User.create(first_name:"Austin", last_name:"Brovick", email:"austinbrovick@yahoo.com", password:"password")
+User.create(first_name:"Lebron", last_name:"James", email:"lebronjames@yahoo.com", password:"password")
