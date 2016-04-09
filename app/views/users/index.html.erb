@@ -16,6 +16,11 @@
             <td><%= u.first_name %></td>
             <td><%= u.last_name %></td>
             <td><%= u.email %></td>
+            <td>
+              <a href='/users/<%= u.id %>'>Show</a>
+              <a href='/users/<%= u.id %>/edit'>Edit</a>
+              <a href='/users/<%= u.id %>/destroy'>Destroy</a>
+            </td>
           </tr>
         <% end %>
       </table>

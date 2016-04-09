@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div id='main_wrapper'>
+      <h1><%= @user.id %></h1>
+      <h1>edit</h1>
+        <ul>
+        <form method='post' action='/users/<%= @user.id %>'>
+          <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        <li>First Name</li>
+        <li><input type='text' name='info[first_name]' value='<%= @user.first_name %>'></li>
+        <li>Last Name</li>
+        <li><input type='text' name='info[last_name]' value='<%= @user.last_name %>'></li>
+        <li>Email</li>
+        <li><input type='text' name='info[email]' value='<%= @user.email %>'></li>
+        <li>Password</li>
+        <li><input type='password' name='info[password]' value='<%= @user.password %>'></li>
+        <li><input type='submit' value='Edit' /></li>
+      </ul>
+    </div>
+</body>
+
+
+</html>
